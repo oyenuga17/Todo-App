@@ -18,7 +18,7 @@
         </header>
 
         <form class="form">
-            <input placeholder="Tell me your todo" type="text" class="form__input todo__text" >
+            <input  placeholder="Tell me your todo" type="text" class="form__input todo__text" >
             <button class="btn form__btn"> Add</button>
 
         </form>
@@ -65,4 +65,36 @@
 </body>
 
 </html>
+
+<!--  
+function validateForm() {
+
+    var x = todoInputField.value;
+    isEditMode = "NOTHING"
+    if (x == "") {
+        alert("list must be filled out");
+        return false
+    }
+    return true
+}
+
+function TodoFormSubmit(event) {
+
+    event.preventDefault();
+
+    const todoInputValue = todoInputField.value;
+
+    switch (isEditMode) {
+        case "EDIT":
+            editTodo(todoInputValue);
+            break;
+        case "NOTHING":
+            validateForm(todoInputValue);
+        default:
+            addTodoToList(todoInputValue);
+    }
+}
+
+-->
+
 
